@@ -10,13 +10,23 @@
 The project to classify the messages during nature disasters. By analyzing real messages sent during natural disasters (Data provided by Appen) and using machine learning techiniques to create a multi-output supervised learning model to categorize the messages, the result is visually presented on a web app.
 
 ### File Descriptions
-app | - template | |- master.html # main page of web app | |- go.html # classification result page of web app |- run.py # Flask file that runs app
 
-data |- disaster_categories.csv # data to process |- disaster_messages.csv # data to process |- process_data.py |- InsertDatabaseName.db # database to save clean data to models
-
-|- train_classifier.py |- classifier.pkl # saved model
-
-README.md
+  - README.md: read me file
+  - ETL Pipeline Preparation.ipynb: contains ETL pipeline preparation code
+  - ML Pipeline Preparation.ipynb: contains ML pipeline preparation code
+  - workspace
+	- app
+		- run.py: flask file to run the app
+	- templates
+		- master.html: main page of the web application 
+		- go.html: result web page
+	- data
+		- disaster_categories.csv: categories dataset
+		- disaster_messages.csv: messages dataset
+		- DisasterResponse.db: disaster response database
+		- process_data.py: ETL process
+	- models
+		- train_classifier.py: random forecast classification code
 
 ### Instructions
    Run the following commands in the project's root directory to set up your database and model.
